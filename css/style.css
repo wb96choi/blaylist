@@ -3,41 +3,83 @@
 
 #wrap {
     width: 100%;
+    position: relative;
+    padding-top: 15vh;
 }
-header {
-    height: 18vh;
+#header {
+    background-color: var(--main-color1);
+    box-shadow: 0px 5px 20px 10px var(--main-color2-shadow);
+    height: 15vh;
     border-bottom: 1px solid var(--main-color2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
+#header.on {
+    
+}
+
 main {
     margin-top: 50px;    
 }
 #main-visual {
-    width: 150vh;
+    width: 80vw;
     height: 70vh;
     background-color: var(--main-color2);
     margin: 0 auto;
     margin-bottom: 50vh;
 }
+/* main-visual------------------------ */
+
+
 #random {
-    width: 150vh;
+    width: 80vw;
     height: 70vh;
     background-color: var(--main-color2);
     margin: 0 auto;
     margin-bottom: 50vh;
+    display: flex;
 }
 #random .recommend {
-    width: 45%;
-
+    width: 45vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid red;
 }
 #random .recommend .con-img {
-    width: 100%;
-
+    
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 30%;
+    height: 20vh;
+    outline: 1px solid blue;
 }
 #random .recommend .con-img > img {
     object-fit: cover;
 }
+#random .recommend article {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+#random .youtube {
+    width: 35vw;
+    outline: 4px solid green;
+}
+#random .youtubelink {
+    width: 25vw;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+/* random------------------------ */
+
+
 #category {
-    width: 150vh;
+    width: 80vw;
     height: 70vh;
     background-color: var(--main-color2);
     margin: 0 auto;
@@ -46,8 +88,9 @@ main {
 }
 #category .all {
     position: absolute;
-    margin-left: 12vh;
-    margin-top: 8vh;
+    margin-left: 8vh;
+    margin-top: 4vh;
+    color: var(--main-color3);
 }
 #category .genre-category {
     width: 90%;
@@ -79,9 +122,15 @@ main {
 }
 
 #about {
-    width: 150vh;
+    width: 80vw;
     height: 70vh;
     background-color: var(--main-color2);
     margin: 0 auto;
-    margin-bottom: 15vh;
+    margin-bottom: 50vh;
+}
+
+
+
+@media ( max-width: 1023px) {
+
 }
