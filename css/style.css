@@ -1,0 +1,87 @@
+@import url('reset.css');
+
+
+#wrap {
+    width: 100%;
+}
+header {
+    height: 18vh;
+    border-bottom: 1px solid var(--main-color2);
+}
+main {
+    margin-top: 50px;    
+}
+#main-visual {
+    width: 150vh;
+    height: 70vh;
+    background-color: var(--main-color2);
+    margin: 0 auto;
+    margin-bottom: 50vh;
+}
+#random {
+    width: 150vh;
+    height: 70vh;
+    background-color: var(--main-color2);
+    margin: 0 auto;
+    margin-bottom: 50vh;
+}
+#random .recommend {
+    width: 45%;
+
+}
+#random .recommend .con-img {
+    width: 100%;
+
+}
+#random .recommend .con-img > img {
+    object-fit: cover;
+}
+#category {
+    width: 150vh;
+    height: 70vh;
+    background-color: var(--main-color2);
+    margin: 0 auto;
+    margin-bottom: 50vh;
+    position: relative;
+}
+#category .all {
+    position: absolute;
+    margin-left: 12vh;
+    margin-top: 8vh;
+}
+#category .genre-category {
+    width: 90%;
+    height: 70%;
+    margin: 3vh auto;
+    transform: translateY(20%);
+    text-align: center;
+    
+}
+#category .genre-category button {
+    width: 20%;
+  height: 20%;
+  margin: 3%;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+}
+#category .genre-category button a {
+    
+}
+
+#about {
+    width: 150vh;
+    height: 70vh;
+    background-color: var(--main-color2);
+    margin: 0 auto;
+    margin-bottom: 15vh;
+}
