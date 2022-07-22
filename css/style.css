@@ -10,11 +10,17 @@
     background-color: var(--main-color1);
     box-shadow: 0px 5px 20px 10px var(--main-color2-shadow);
     height: 15vh;
-    border-bottom: 1px solid var(--main-color2);
+    /* border-bottom: 1px solid var(--main-color2); */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
+}
+#header .logo {
+    /* position: fixed; */
+}
+#header .logo img {
+    height: 100px;
 }
 #header.on {
     
