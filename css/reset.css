@@ -5,7 +5,8 @@
 }
 :root {
     --main-color1: #2c2c2e;
-    --main-color2: #f9c1b1;
+    --main-color2: #fac0c0;
+    --sub-color1: #f9c1b1;
     --main-color2-shadow: rgba(249, 193, 177, 0.5);
     --main-color3: #f5f5f5;
 }
