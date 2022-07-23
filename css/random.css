@@ -1,7 +1,8 @@
 #random {
     width: 80vw;
     height: 70vh;
-    background-color: var(--main-color2);
+    border: 3px solid var(--main-color2);
+    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 50vh;
     display: flex;
@@ -11,7 +12,7 @@
     height: 70vh;
     display: flex;
     flex-direction: column;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
     position: relative;
 }
 #random .recommend .con-img {    
@@ -30,6 +31,7 @@
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    color: var(--main-color2);
 }
 #random .recommend article .con-comment {
     width: 40vw;

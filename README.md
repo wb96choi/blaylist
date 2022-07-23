@@ -4,6 +4,7 @@ https://wb96choi.github.io/blaylist/
 ## 기능
 - 스크롤을 감지하여 스크롤을 내릴땐 헤더가 사라지고 올릴때만 다시 보이는 기능
 - 토글메뉴를 누르면 스크롤인디케이터가 나와 해당 영역으로 자동스크롤 되는 기능
+    - 현재 페이지가 어디쯤인지 스크롤 인디케이터가 알려준다! 
 - 랜덤으로 음악(json파일에서)을 추천해줌
 - 카테고리별로 분류 가능
 - about 섹션에서 카카오톡 버튼을 누르면 나랑 상담도 가능
@@ -14,6 +15,13 @@ https://wb96choi.github.io/blaylist/
     - 해결
 - toggle-btn을 눌러서 .indicator가 나오게 하고 싶은데 기능이 작동을 안함
     - 해결
+- ..더보기.. 를 글자가 아닌 button태그를 사용하여 detail페이지로 이동시키고 싶은데 
+$(this).each(function(){
+            if($(this).text().length >= length ){
+                $(this).text($(this).text().substr(0,length)+'..더 보기..');
+            };
+        });
+이 태그에서 어떻게 append시켜야 할 지 모르겟음
 
 
 ## 목표

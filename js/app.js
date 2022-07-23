@@ -35,17 +35,18 @@ $(window).bind('mousewheel', function(event) {
 $(function(){
     $('#random .recommend article .con-comment').each(function(){
         // 100글자 넘어가면 잘림
-        var length = 100;
+        var length = 3;
+        var appendit = `<button id="detail"><a href="product.html">..더보기..</a></button>`
 
         $(this).each(function(){
             if($(this).text().length >= length ){
-                $(this).text($(this).text().substr(0,length)+'..더 보기..');
+                $(this).text($(this).text().substr(0,length) + appendit);
             };
         });
     });
 });
 
-
+// .append(`<button id="detail"><a href="product.html">..더보기..</a></button>`));
 
 // 토글메뉴
 $(function(){
@@ -84,7 +85,43 @@ $(function(){
     $('.movetoAB').click(function(){
         window.scrollTo({top:movetoAB, behavior:'smooth'});
     });
+
+    $(window).on('scroll', function(){
+        if(window.scrollY < movetoRD){
+            $('.movetoMV').addClass('on');
+            $('.movetoRD').removeClass('on');
+        }else{
+            $('.movetoMV').removeClass('on');
+            $('.movetoRD').removeClass('on');
+            $('.movetoCG').removeClass('on');
+        }        
+    });
+    $(window).on('scroll', function(){
+        if(movetoRD <= window.scrollY){
+            $('.movetoRD').addClass('on');            
+        }else if(movetoRD <= window.scrollY){
+            $('.movetoRD').removeClass('on');
+            $('.movetoMV').removeClass('on');
+            $('.movetoCG').removeClass('on');
+        }
+    });
+    $(window).on('scroll', function(){
+        if(movetoCG <= window.scrollY){
+            $('.movetoCG').addClass('on');
+            $('.movetoRD').removeClass('on');
+        }else if(movetoCG <= window.scrollY){
+            $('.movetoCG').removeClass('on');
+        }
+    });
+    $(window).on('scroll', function(){
+        if(window.scrollY > movetoAB){
+            $('.movetoAB').addClass('on');
+            $('.movetoCG').removeClass('on');
+        }else{
+            $('.movetoAB').removeClass('on');
+        }
+    });
+   
 });
 
 
-// window.scrollTo({top:location - menuHeight, behavior:'smooth'});

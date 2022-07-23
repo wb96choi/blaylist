@@ -30,7 +30,7 @@ ul {
 }
 
 #wrap {
-    width: 100%;
+    width: 100vw;
     position: relative;
     /* padding-top: 15vh; */
 }

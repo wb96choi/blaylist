@@ -123,6 +123,9 @@
 #indicator ul li:hover {
     color: var(--main-color2);
 }
+#indicator ul li.on {
+    background-color: #fff;
+}
 /* menu------------- */
 
 main {
@@ -135,7 +138,8 @@ main {
 #main-visual {
     width: 80vw;
     height: 70vh;
-    background-color: var(--main-color2);
+    border: 3px solid var(--main-color2);
+    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 50vh;
 }
@@ -149,7 +153,8 @@ main {
 #about {
     width: 80vw;
     height: 70vh;
-    background-color: var(--main-color2);
+    border: 3px solid var(--main-color2);
+    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 10vh;
 }
