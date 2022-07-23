@@ -1,0 +1,21 @@
+@import url('reset.css');
+
+.small_logo {
+    display:block;
+   }
+body {
+    background-color: var(--main-color1);
+}
+#header {
+    background-color: var(--header-color2);
+    box-shadow: 0px 5px 20px 10px var(--main-color1-shadow);
+}
+
+main {
+    width: 95vw;
+    height: 80vh;
+    background-color: var(--main-color1);
+    margin: 0 auto;
+    /* margin-bottom: 40vh; */
+    margin-top: calc(50px + 10vh);
+}

@@ -51,12 +51,40 @@ $(function(){
 $(function(){
 
     $('#header .toggle-btn').click(function(){
-      $('.indicator').addClass('on');
+      $('#indicator').addClass('on');
     });
 
-    $('#header .toggle-btn').click(function(){
-      $('.indicator').removeClass('on');
+    $('#indicator #close-btn').click(function(){
+      $('#indicator').removeClass('on');
     });
   
   
-  });
+});
+
+
+// 스크롤 좌표 찾아서 이동시키기
+$(function(){
+
+    // 해당 #id값의 Top좌표값 찾아주기
+    var movetoMV = document.querySelector("#main-visual").offsetTop;
+    var movetoRD = document.querySelector("#random").offsetTop;
+    var movetoCG = document.querySelector("#category").offsetTop;
+    var movetoAB = document.querySelector("#about").offsetTop;
+
+    // 클릭하면 scrollTo
+    $('.movetoMV').click(function(){
+        window.scrollTo({top:movetoMV, behavior:'smooth'});
+    });
+    $('.movetoRD').click(function(){
+        window.scrollTo({top:movetoRD, behavior:'smooth'});
+    });
+    $('.movetoCG').click(function(){
+        window.scrollTo({top:movetoCG, behavior:'smooth'});
+    });
+    $('.movetoAB').click(function(){
+        window.scrollTo({top:movetoAB, behavior:'smooth'});
+    });
+});
+
+
+// window.scrollTo({top:location - menuHeight, behavior:'smooth'});

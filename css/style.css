@@ -5,7 +5,7 @@
 
 
 #header {
-    background-color: var(--header-color);
+    background-color: var(--header-color1);
     box-shadow: 0px 5px 20px 10px var(--main-color2-shadow);
     height: 15vh;
     /* border-bottom: 1px solid var(--main-color2); */
@@ -21,11 +21,17 @@
     height: 100px;
     margin-top: 3vh;
     margin-left: 2vw;
-
 }
-#header .logo:hover {
+#header .big_logo {
+    width: 250px;
+}
+#header .small_logo {
+    width: 50px;    
+}
+#header .big_logo:hover,
+#header .small_logo:hover {
     animation-name: logo-tilt;
-    transform-origin: center right;
+    transform-origin: center center;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
@@ -48,13 +54,7 @@
     }
 
 }
-#header .big_logo {
-    width: 250px;
-}
-#header .small_logo {
-    width: 50px;
-    
-}
+
 
 /* 반응형 로고 */
 @media only screen and (max-width: 480px){ 
@@ -78,10 +78,9 @@
 
 #header .toggle-btn {
     position: absolute;
-    
+    cursor: pointer;
     right: 2vw;
     top: 4vh;
-    outline: 1px solid red;
 }
 #header .toggle-btn > img {
     width: 50%;
@@ -89,25 +88,40 @@
 
 
 
-#header .indicator {
+#indicator {
     position: fixed;
-    width: 200px;
+    width: 30vw;
     height: 100vh;
+    background-color: var(--main-color1);
+    color: var(--main-color3);
     top: 0;
     right: 0;
-    transform: translateY(50%);
-    transition-duration: 0.4s;
+    transform: translateX(100%);
+    transition-duration: 0.5s;
     z-index: 999;
 }
-#header .indicator.on {
+#indicator.on {
     position: fixed;
-    width: 200px;
-    height: 100vh;
-    top: 0;
+    transform: translateX(0);
     right: 0;
-    transform: translateY(0%);
-    transition-duration: 0.4s;
-    z-index : 999;
+    top: 0;
+}
+#indicator #close-btn {
+    position: absolute;
+    top: 4vh;
+    right: 2vw;
+}
+#indicator ul {
+    margin-top: 20vh;
+    margin-left: 50%;
+    transform: translateX(-25%);
+    cursor: pointer;
+}
+#indicator ul li {
+    margin-top: 10vh;
+}
+#indicator ul li:hover {
+    color: var(--main-color2);
 }
 /* menu------------- */
 

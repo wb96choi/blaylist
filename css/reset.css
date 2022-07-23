@@ -6,8 +6,10 @@
 :root {
     --main-color1: #2c2c2e;
     --main-color2: #fac0c0;
-    --header-color: rgba(250, 192, 192, 0.45);
+    --header-color1: rgba(250, 192, 192, 0.45);
+    --header-color2: rgba(44, 44, 46, 0.45);
     --sub-color1: #f9c1b1;
+    --main-color1-shadow: rgba(44, 44, 46, 0.45);
     --main-color2-shadow: rgba(250, 192, 192, 0.45);
     --main-color3: #f5f5f5;
 }
