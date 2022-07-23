@@ -23,6 +23,9 @@ $(this).each(function(){
         });
 이 태그에서 어떻게 append시켜야 할 지 모르겟음
 
+-  쏘세지 메뉴버튼 디자인 고르기
+- 쏘세지 메뉴버튼 overflow scroll이 안됨 왜
+
 
 ## 목표
 
