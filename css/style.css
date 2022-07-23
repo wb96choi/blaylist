@@ -1,34 +1,123 @@
 @import url('reset.css');
+@import url('random.css');
+@import url('category.css');
 
 
-#wrap {
-    width: 100%;
-    position: relative;
-    padding-top: 15vh;
-}
+
 #header {
-    background-color: var(--main-color1);
+    background-color: var(--header-color);
     box-shadow: 0px 5px 20px 10px var(--main-color2-shadow);
     height: 15vh;
     /* border-bottom: 1px solid var(--main-color2); */
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 99;
 }
 #header .logo {
-    /* position: fixed; */
-}
-#header .logo img {
+    /* position: absolute; */
+    width: 100px;
     height: 100px;
+    margin-top: 3vh;
+    margin-left: 2vw;
+
 }
-#header.on {
+#header .logo:hover {
+    animation-name: logo-tilt;
+    transform-origin: center right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo-tilt {
+
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(15deg);
+    }
+    50% {
+        transform: rotateZ(-15deg);
+    }
+    75% {
+        transform: rotateZ(15deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+
+}
+#header .big_logo {
+    width: 250px;
+}
+#header .small_logo {
+    width: 50px;
     
 }
 
-main {
-    margin-top: 50px;    
+/* 반응형 로고 */
+@media only screen and (max-width: 480px){ 
+    .big_logo {
+     display:none;
+    }
+    .small_logo {
+     display:block;
+    }
+   }
+   @media only screen and (min-width: 481px){ 
+    .big_logo {
+     display:block;
+    }
+    .small_logo {
+     display:none;
+    }
+   }
+/* logo------------- */
+
+
+#header .toggle-btn {
+    position: absolute;
+    
+    right: 2vw;
+    top: 4vh;
+    outline: 1px solid red;
 }
+#header .toggle-btn > img {
+    width: 50%;
+}
+
+
+
+#header .indicator {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateY(50%);
+    transition-duration: 0.4s;
+    z-index: 999;
+}
+#header .indicator.on {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateY(0%);
+    transition-duration: 0.4s;
+    z-index : 999;
+}
+/* menu------------- */
+
+main {
+    margin-top: calc(50px + 15vh);
+}
+
+
+
+
 #main-visual {
     width: 80vw;
     height: 70vh;
@@ -39,104 +128,20 @@ main {
 /* main-visual------------------------ */
 
 
-#random {
-    width: 80vw;
-    height: 70vh;
-    background-color: var(--main-color2);
-    margin: 0 auto;
-    margin-bottom: 50vh;
-    display: flex;
-}
-#random .recommend {
-    width: 45vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    outline: 3px solid red;
-}
-#random .recommend .con-img {
-    
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    width: 30%;
-    height: 20vh;
-    outline: 1px solid blue;
-}
-#random .recommend .con-img a img {
-    width: 100%;
-}
-#random .recommend article {
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-#random .youtube {
-    width: 35vw;
-    outline: 4px solid green;
-}
-#random .youtubelink {
-    width: 25vw;
-    margin: 0 auto;
-    margin-top: 25vh;
-}
-/* random------------------------ */
 
 
-#category {
-    width: 80vw;
-    height: 70vh;
-    background-color: var(--main-color2);
-    margin: 0 auto;
-    margin-bottom: 50vh;
-    position: relative;
-}
-#category .all {
-    position: absolute;
-    margin-left: 8vh;
-    margin-top: 4vh;
-    color: var(--main-color3);
-}
-#category .genre-category {
-    width: 90%;
-    height: 70%;
-    margin: 3vh auto;
-    transform: translateY(20%);
-    text-align: center;
-    
-}
-#category .genre-category button {
-    width: 20%;
-  height: 20%;
-  margin: 3%;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-}
-#category .genre-category button a {
-    
-}
+
 
 #about {
     width: 80vw;
     height: 70vh;
     background-color: var(--main-color2);
     margin: 0 auto;
-    margin-bottom: 50vh;
+    margin-bottom: 10vh;
 }
 
 
 
-@media ( max-width: 1023px) {
+@media ( max-width: 480px) {
 
 }

@@ -28,3 +28,35 @@ $(window).bind('mousewheel', function(event) {
         $('#header .logo').css('transition-duration', '0.5s').css('transform', 'translateY(-100%)');
     }
 });
+
+
+
+// 설명란 길면 자르기 
+$(function(){
+    $('#random .recommend article .con-comment').each(function(){
+        // 100글자 넘어가면 잘림
+        var length = 100;
+
+        $(this).each(function(){
+            if($(this).text().length >= length ){
+                $(this).text($(this).text().substr(0,length)+'..더 보기..');
+            };
+        });
+    });
+});
+
+
+
+// 토글메뉴
+$(function(){
+
+    $('#header .toggle-btn').click(function(){
+      $('.indicator').addClass('on');
+    });
+
+    $('#header .toggle-btn').click(function(){
+      $('.indicator').removeClass('on');
+    });
+  
+  
+  });

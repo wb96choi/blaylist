@@ -1,0 +1,51 @@
+#random {
+    width: 80vw;
+    height: 70vh;
+    background-color: var(--main-color2);
+    margin: 0 auto;
+    margin-bottom: 50vh;
+    display: flex;
+}
+#random .recommend {
+    width: 45vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid red;
+    position: relative;
+}
+#random .recommend .con-img {    
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 30%;
+    /* height: 20vh; */
+    outline: 1px solid blue;
+}
+#random .recommend .con-img a img {
+    width: 100%;
+}
+#random .recommend article {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+#random .recommend article .con-comment {
+    width: 40vw;
+    height: 20vh;
+    outline: 2px solid blue;
+   
+}
+#random .youtube {
+    width: 35vw;
+    outline: 4px solid green;
+}
+#random .youtubelink {
+    outline: 2px solid green;
+    width: 25vw;
+    height: 23vh;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+/* random------------------------ */
