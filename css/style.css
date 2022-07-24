@@ -57,7 +57,7 @@
 
 
 /* 반응형 로고 */
-@media only screen and (max-width: 480px){ 
+@media only screen and (max-width: 768px){ 
     .big_logo {
      display:none;
     }
@@ -65,7 +65,7 @@
      display:block;
     }
    }
-   @media only screen and (min-width: 481px){ 
+   @media only screen and (min-width: 769px){ 
     .big_logo {
      display:block;
     }
@@ -220,6 +220,6 @@ main {
 
 
 
-@media ( max-width: 480px) {
+@media ( max-width: 768px) {
 
 }

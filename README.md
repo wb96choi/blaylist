@@ -11,9 +11,9 @@ https://wb96choi.github.io/blaylist/
 
 ## 피드백 받을거
 
-- #random .recommend .con-img 의 height값을 너비값에 맞춰 정사각형 (파란색 outline 참고)으로 만들고 싶음 
+- ~~#random .recommend .con-img 의 height값을 너비값에 맞춰 정사각형 (파란색 outline 참고)으로 만들고 싶음 ~~
     - 해결
-- toggle-btn을 눌러서 .indicator가 나오게 하고 싶은데 기능이 작동을 안함
+- ~~toggle-btn을 눌러서 .indicator가 나오게 하고 싶은데 기능이 작동을 안함~~
     - 해결
 - ..더보기.. 를 글자가 아닌 button태그를 사용하여 detail페이지로 이동시키고 싶은데 
 $(this).each(function(){
@@ -23,10 +23,11 @@ $(this).each(function(){
         });
 이 태그에서 어떻게 append시켜야 할 지 모르겟음
 
--  쏘세지 메뉴버튼 디자인 고르기
+- ~~쏘세지 메뉴버튼 디자인 고르기~~
+    - 해결
 - 쏘세지 메뉴버튼 overflow scroll이 안됨 왜
 
 
 ## 목표
 
-480px 이하의 너비에서(스마트폰 환경) 레이아웃이 변화하는 개미친 반응형웹사이트를 만들 예정
+768px 이하의 너비에서(스마트폰 환경) 레이아웃이 변화하는 개미친 반응형웹사이트를 만들 예정
