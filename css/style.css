@@ -158,6 +158,65 @@ main {
     margin: 0 auto;
     margin-bottom: 10vh;
 }
+#kakao {
+    position: absolute;
+    /* outline: 1px solid black; */
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    bottom: 0;
+    right: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#kakao-talk-channel-chat-button {
+    width: 150px;
+    height: 50px;
+    background-color: #F7E600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    position: relative;    
+}
+#kakao-talk-channel-chat-button .btnTwo {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: #3A1D1D;
+    left: -150px;
+    top: 0;
+    text-align: right;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    transition : .3s;
+}
+#kakao-talk-channel-chat-button .btnText2 img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+#kakao-talk-channel-chat-button .btnText {
+    transition : .3s;
+}
+#kakao-talk-channel-chat-button:hover .btnTwo{
+    transform: translateX(45%);
+  }
+#kakao-talk-channel-chat-button:hover .btnText{
+    margin-left: 60px;
+  }
+#kakao-talk-channel-chat-button:active {
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+  }
+
 
 
 

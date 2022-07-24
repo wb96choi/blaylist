@@ -125,3 +125,18 @@ $(function(){
 });
 
 
+// 카카오 채널 열기
+function open_kakao_channel() {
+    Kakao.Channel.addChannel({
+      channelPublicId: '_xlnAzxj'
+    });
+  }
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//developers.kakao.com/sdk/js/kakao.plusfriend.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, 'script', 'kakao-js-sdk');
+

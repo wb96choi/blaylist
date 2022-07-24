@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=당신의api아이디"></script>
 </head>
 <body>
     <div id="wrap">
@@ -75,7 +76,18 @@
             </section>
                 <!-- category--------------------------------------- -->
             <section id="about">
-                
+                <div id="kakao">
+                    <button type="button" id="kakao-talk-channel-chat-button" data-channel-public-id="_xcLqmC"
+                    onclick="open_kakao_channel();">
+                        <p class="btnText">카카오톡</p>
+                        <div class="btnTwo">
+                          <p class="btnText2">
+                            <img src="images/kakaotalk.png" alt="카카오톡 바로가기">
+                          </p>
+                        </div>
+                    </button>
+                </div>
+
             </section>
                 <!-- about------------------------ -->
         </main>
