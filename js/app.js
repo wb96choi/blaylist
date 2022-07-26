@@ -58,9 +58,9 @@ $(function(){
     $('#indicator #close-btn').click(function(){
       $('#indicator').removeClass('on');
     });
-  
-  
+
 });
+
 
 
 // 스크롤 좌표 찾아서 이동시키기
@@ -114,7 +114,8 @@ $(function(){
         }
     });
     $(window).on('scroll', function(){
-        if(window.scrollY > movetoAB){
+        // > 말고 >=를 써야 됨~~~
+        if(window.scrollY >= movetoAB){
             $('.movetoAB').addClass('on');
             $('.movetoCG').removeClass('on');
         }else{

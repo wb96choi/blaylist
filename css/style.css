@@ -157,6 +157,7 @@ main {
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 10vh;
+    position: relative;
 }
 #kakao {
     position: absolute;
@@ -165,7 +166,7 @@ main {
     height: 100px;
     margin: 0 auto;
     bottom: 0;
-    right: 10vw;
+    right: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;

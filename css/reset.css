@@ -33,6 +33,7 @@ ul {
     width: 100vw;
     position: relative;
     /* padding-top: 15vh; */
+    overflow: hidden;
 }
 button {
     background-color: transparent;

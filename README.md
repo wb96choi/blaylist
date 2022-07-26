@@ -26,6 +26,8 @@ $(this).each(function(){
 - ~~쏘세지 메뉴버튼 디자인 고르기~~
     - 해결
 - 쏘세지 메뉴버튼 overflow scroll이 안됨 왜
+    - ~~해결!!!!!! (#wrap 에 overflow: hidden줘서 가림)~~
+        - 스크롤이 소세지메뉴만 돼야하는데 #product가 다 됨..
 
 
 ## 목표
