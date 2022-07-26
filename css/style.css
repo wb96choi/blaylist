@@ -152,11 +152,12 @@ main {
 
 #about {
     width: 80vw;
-    height: 70vh;
+    height: 100vh;
     border: 3px solid var(--main-color2);
     border-radius: 10px;
     margin: 0 auto;
-    margin-bottom: 30vh;
+    /* padding-top: 20vh; */
+    /* margin-bottom: 30vh; */
     position: relative;
 }
 #kakao {
