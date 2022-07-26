@@ -71,6 +71,7 @@ $(function(){
     var movetoRD = document.querySelector("#random").offsetTop;
     var movetoCG = document.querySelector("#category").offsetTop;
     var movetoAB = document.querySelector("#about").offsetTop;
+    var pageEnd = document.querySelector("#wrap").offsetBottom;
 
     // 클릭하면 scrollTo
     $('.movetoMV').click(function(){
@@ -90,6 +91,7 @@ $(function(){
         if(window.scrollY < movetoRD){
             $('.movetoMV').addClass('on');
             $('.movetoRD').removeClass('on');
+            $('.movetoAB').removeClass('on');
         }else{
             $('.movetoMV').removeClass('on');
             $('.movetoRD').removeClass('on');
@@ -115,7 +117,7 @@ $(function(){
     });
     $(window).on('scroll', function(){
         // > 말고 >=를 써야 됨~~~
-        if(window.scrollY >= movetoAB){
+        if(window.scrollY >= movetoAB ){
             $('.movetoAB').addClass('on');
             $('.movetoCG').removeClass('on');
         }else{

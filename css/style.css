@@ -156,7 +156,7 @@ main {
     border: 3px solid var(--main-color2);
     border-radius: 10px;
     margin: 0 auto;
-    margin-bottom: 10vh;
+    margin-bottom: 30vh;
     position: relative;
 }
 #kakao {
