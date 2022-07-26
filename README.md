@@ -11,7 +11,7 @@ https://wb96choi.github.io/blaylist/
 
 ## 피드백 받을거
 
-- ~~#random .recommend .con-img 의 height값을 너비값에 맞춰 정사각형 (파란색 outline 참고)으로 만들고 싶음 ~~
+- ~~#random .recommend .con-img 의 height값을 너비값에 맞춰 정사각형 (파란색 outline 참고)으로 만들고 싶음~~
     - 해결
 - ~~toggle-btn을 눌러서 .indicator가 나오게 하고 싶은데 기능이 작동을 안함~~
     - 해결
